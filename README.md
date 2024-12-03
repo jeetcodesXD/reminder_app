@@ -3,8 +3,9 @@
 A simple Flutter app to manage reminders with completion toggles using the BLoC pattern.
 
 ## Screenshots
-[![Reminder List Screen](assets/screenshots/Screenshot 2024-12-03 152306.png)
-![Add Reminder Screen](assets/screenshots/Screenshot 2024-12-03 152322.png)](https://github.com/jeetcodesXD/reminder_app/issues/1#issue-2714606098)
+![S![Screenshot 2024-12-03 152322](https://github.com/user-attachments/assets/0d2a702e-81dd-45b3-a251-7301bd400d97)
+creenshot 2024-12-03 152306](https://github.com/user-attachments/assets/8c5761ac-6d6a-4bb9-8010-ea956a81c389)
+
 
 ## Features
 - Add new reminders
