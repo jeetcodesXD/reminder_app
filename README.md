@@ -1,16 +1,28 @@
-# reminders
+# Reminder App
 
-A new Flutter project.
+A simple Flutter app to manage reminders with completion toggles using the BLoC pattern.
 
-## Getting Started
+## Screenshots
+![Reminder List Screen](docs/screenshots/F:\Flutter Projects\reminders\reminders\assets\screenshots\Screenshot 2024-12-03 152306.png)
+![Add Reminder Screen](docs/screenshots/F:\Flutter Projects\reminders\reminders\assets\screenshots\Screenshot 2024-12-03 152322.png)
 
-This project is a starting point for a Flutter application.
+## Features
+- Add new reminders
+- Toggle completion status of reminders
 
-A few resources to get you started if this is your first Flutter project:
+## BLoC Implementation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This app uses the **BLoC (Business Logic Component)** pattern for state management. Below are the main components and how they work:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### `ReminderBloc`
+- **State**: `ReminderState` holds the list of reminders.
+- **Events**:
+  - `AddReminder`: Adds a new reminder to the list.
+  - `ToggleReminderCompletion`: Toggles the `isCompleted` state of a specific reminder.
+
+### `ReminderState`
+- Holds the list of `Reminder` objects and is immutable to ensure proper UI updates.
+
+### `Reminder`
+- The model class representing a reminder with a `text` and a `isCompleted` flag.
+- Includes a `copyWith` method to facilitate state immutability when updating reminders.
